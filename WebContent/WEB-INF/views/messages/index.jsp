@@ -6,8 +6,8 @@
         <h2>タスク管理一覧</h2>
         <ul>
             <c:forEach var="tasks" items="${task}">
-                <li><a href="${pageContext.request.contextPath}"
-                    /show?id=${tasks.id}"><c:out value="${tasks.id}" /></a> :<c:out
+                <li><a href="${pageContext.request.contextPath}/show?id=${tasks.id}">
+                    <c:out value="${tasks.id}" /></a> :<c:out
                         value="${tasks.content}" /></li>
             </c:forEach>
         </ul>
